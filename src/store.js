@@ -1,5 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { createStore, combineReducers } from 'redux'
 
-export default configureStore({
-	reducer: {},
-})
+const reducer = combineReducers({})
+
+const initialState = {
+	character: {},
+	friends: {},
+}
+
+const store = createStore(reducer, initialState)
+
+export default store

@@ -1,7 +1,7 @@
 import React from 'react'
-import './App.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Container } from '@mui/material'
+import Homescreen from './screens/Homescreen'
 
 const App = () => {
 	return (
@@ -10,7 +10,9 @@ const App = () => {
 				{
 					//Side bar component will go here
 				}
-				<Container></Container>
+				<Container>
+					<Route path='/' component={Homescreen} exact />
+				</Container>
 			</>
 		</Router>
 	)
