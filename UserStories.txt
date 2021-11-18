@@ -1,0 +1,4 @@
+[ ] As a User I want to be able to search for my character so that I can find my friends
+[ ] As a User I want to be able to search through characters on my server so that I don't have to know my lodestone ID
+[ ] As a User I want to be able to leave notes for my friends from my friends list so that I can remember things
+[ ] As a User I want to be able to click on a friend in my list to get a quick summary so that I can better remember who they are
