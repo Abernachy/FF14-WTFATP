@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { FormControl, Paper } from '@mui/material'
+import React, { useState, useEffect } from 'react'
+import { Container, Typography, Box, Button } from '@mui/material'
 
 const defaultValues = {
 	lodeId: '',
@@ -17,13 +17,21 @@ const Homescreen = () => {
 	}
 
 	return (
-		<div>
-			<Paper elevation={3}>
+		<Box sx={{ backgroundColor: 'primary.main', borderStyle: 'groove' }}>
+			<Container>
+				<Typography variant='h1' align='center'>
+					Who The F#$% Are These People?
+				</Typography>
+
 				<form onSubmit={handleSubmit}>
-					<Grid container alignItems='center' justify='center' direction='column'></Grid>
+					<div align='center'>
+						<Button variant='contained' color='secondary'>
+							Submit
+						</Button>
+					</div>
 				</form>
-			</Paper>
-		</div>
+			</Container>
+		</Box>
 	)
 }
 
