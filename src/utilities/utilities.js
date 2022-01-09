@@ -17,7 +17,7 @@ export const getCharByID = async (lodeId) => {
 }
 
 export const searchChar = async (charName, server) => {
-	//Broke the call into a separate serach function
+	//Broke the call into a separate search function
 	try {
 		const searchURL = `https://xivapi.com/character/search?name=${charName}&server=${server}`
 		const { data } = await axios.get(searchURL)

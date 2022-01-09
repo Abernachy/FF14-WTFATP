@@ -17,21 +17,19 @@ const Homescreen = () => {
 	}
 
 	return (
-		<Box sx={{ backgroundColor: 'primary.main', borderStyle: 'groove' }}>
-			<Container>
-				<Typography variant='h1' align='center'>
-					Who The F#$% Are These People?
-				</Typography>
+		<Container>
+			<Typography variant='h1' align='center'>
+				Title Goes here
+			</Typography>
 
-				<form onSubmit={handleSubmit}>
-					<div align='center'>
-						<Button variant='contained' color='secondary'>
-							Submit
-						</Button>
-					</div>
-				</form>
-			</Container>
-		</Box>
+			<form onSubmit={handleSubmit}>
+				<div align='center'>
+					<Button variant='contained' color='secondary'>
+						Submit
+					</Button>
+				</div>
+			</form>
+		</Container>
 	)
 }
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { Container } from '@mui/material'
 import Homescreen from './screens/Homescreen'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import CharacterSearch from './screens/CharacterSearch'
 
 const theme = createTheme({
 	palette: {
@@ -21,9 +21,10 @@ const theme = createTheme({
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
-			<NavBar />
 			<Router>
+				<NavBar />
 				<Route path='/' component={Homescreen} exact />
+				<Route path='/search' component={CharacterSearch} exact />
 			</Router>
 			<Footer />
 		</ThemeProvider>
