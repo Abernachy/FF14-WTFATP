@@ -30,7 +30,7 @@ const CharacterSearch = () => {
 	const submitHandler = (e) => {
 		e.preventDefault()
 		console.log(characterValues)
-		handleOpen()
+		// handleOpen()
 	}
 
 	const handleChange = (event) => {
